@@ -26,7 +26,16 @@
 }
 
 .item.active{
+  position: relative;
   display: block;
+}
+.text{
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  color: white;
+  padding: 10px;
+  width: 100%;
 }
 
 
