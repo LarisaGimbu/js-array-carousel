@@ -61,7 +61,7 @@
   border: 2px solid rgb(179, 177, 177);
 }
 
-#up i, #down i{
+#up , #down {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -70,11 +70,16 @@
   border-radius: 50%;
 }
 
-#up i{
+#up{
   top: 2%;
 }
-#down i{
+#down{
   top: 90%;
+}
+
+#up:hover , #down:hover{
+  cursor: pointer;
+  background-color: white;
 }
 
 
