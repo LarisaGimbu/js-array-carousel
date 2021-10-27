@@ -31,15 +31,41 @@
 
 
 .aside-image{
-  width: 20%;
+  position: relative;
+  width: 15%;
   height: 100%;
 }
 .aside-image .a-item{
-  width: 70%;
+  width: 100%;
   height: calc(100% / 5);
 }
 .a-item img{
   width: 100%;
   height: 100%;
 }
+
+.a-item{
+  filter: brightness(0.50);
+}
+.a-item.active{
+  filter: brightness(1);
+  border: 2px solid rgb(179, 177, 177);
+}
+
+#up i, #down i{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.726);
+  padding: 4px 5px;
+  border-radius: 50%;
+}
+
+#up i{
+  top: 2%;
+}
+#down i{
+  top: 90%;
+}
+
 
